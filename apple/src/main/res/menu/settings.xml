@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".settingsuse.SettingsActivity" >
+    <item android:id="@+id/reset_all"
+        android:title="@string/reset_all"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

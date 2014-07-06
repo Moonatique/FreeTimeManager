@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="fr.polytech.si4.customCalendar.taskmodule.task.TaskView"
+    android:focusable="false"
+    android:id="@+id/frameTests">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Application for Tests"
+        android:id="@+id/applicationTestTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Run Recurrent Event Test"
+        android:id="@+id/runTest_1"
+        android:onClick="onClickTest_1"
+        android:layout_below="@+id/errorView"
+        android:layout_toLeftOf="@+id/delTest_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/errorView"
+        android:layout_below="@+id/applicationTestTitle"
+        android:layout_alignLeft="@+id/applicationTestTitle" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Del Test"
+        android:id="@+id/delTest_1"
+        android:layout_alignTop="@+id/runTest_1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffff0c1c" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Recurrent Task Test"
+        android:id="@+id/runTest_2"
+        android:layout_below="@+id/runTest_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/delTest_1"
+        android:onClick="onClickTest_2" />
+
+</RelativeLayout>

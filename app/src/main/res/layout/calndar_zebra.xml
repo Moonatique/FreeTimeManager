@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="1440dp"
+    android:background="#ffeaeaea"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/hour_0"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_1"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_2"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_3"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_4"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_5"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_6"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_7"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_8"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_9"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_10"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_11"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_12"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_13"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_14"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_15"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_16"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_17"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_18"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_19"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_20"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_21"
+        layout="@layout/cal_hour"/>
+
+    <include
+        android:id="@+id/hour_22"
+        layout="@layout/cal_hour"/>
+
+
+    <include
+        android:id="@+id/hour_23"
+        layout="@layout/cal_hour"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,59 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        //required to get the plugin working again with gradle:0.11+ and AS0.6.0
+        maven { url 'https://github.com/rockerhieu/mvn-repo/raw/master/' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.11.+'
+        //classpath 'org.robolectric.gradle:gradle-android-test-plugin:0.10.+'
+        //required to get the plugin working again on AS 0.6.0
+        classpath 'org.robolectric.gradle:gradle-android-test-plugin:0.10.1-SNAPSHOT'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'android-library'
+apply plugin: 'android-test'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+    defaultConfig {
+        applicationId 'fr.unice.polytech.taskmodule'
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName '1.0'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { java.srcDirs = ['src/main/java', 'src/test/java/'] } }
+    productFlavors {
+    }
+}
+
+androidTest {
+    include '**/*Test.class'
+    exclude '**/espresso/**/*.class'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':CalendarModule')
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.unice.polytech.freetime.app" >
+
+    <application
+        android:name=".FreeTimeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Bienvenue2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InitParam.FirstParam2"
+            android:label="@string/title_activity_first_param2" >
+        </activity>
+        <activity
+            android:name=".InitParam.ImportCalendar"
+            android:label="@string/title_activity_import_calendar" >
+        </activity>
+        <activity
+            android:name=".InitParam.freeTime.InitFreeTime"
+            android:label="@string/title_activity_set_free_time" >
+        </activity>
+        <activity
+            android:name=".InitParam.recurrentEvent.RecurenteEvent"
+            android:label="@string/title_activity_recurente_event" >
+        </activity>
+        <activity
+            android:name=".InitParam.recurrentEvent.NotifParam"
+            android:label="@string/title_activity_notif_param" >
+        </activity>
+        <activity
+            android:name=".InitParam.recurrentEvent.RecurrentEventList"
+            android:label="@string/title_activity_recurrent_event_list" >
+        </activity>
+        <activity
+            android:name=".InitParam.freeTime.FreeTimeSlotList"
+            android:label="@string/title_activity_free_time_slot_list" >
+        </activity>
+        <activity
+            android:name=".InitParam.DefineEffectiveHours"
+            android:label="@string/title_activity_define_effective_hours" >
+        </activity>
+        <activity
+            android:name=".ManageTask.CreateFixEvent"
+            android:label="@string/title_activity_create_fix_event" >
+        </activity>
+        <activity
+            android:name=".ManageTask.CreateAllDayEvent"
+            android:label="@string/title_activity_create_all_day_event" >
+        </activity>
+        <activity
+            android:name=".ManageTask.CreateTaskProject"
+            android:label="@string/title_activity_new_task_project" >
+        </activity>
+
+        <activity
+            android:name=".Calendar.CalendarViewDay"
+            android:label="@string/title_activity_calendar_view_day" >
+        </activity>
+        <activity
+            android:name=".TopView.NavigationMenu"
+            android:label="@string/title_activity_navigation_menu" >
+        </activity>
+        <activity
+            android:name=".TopView.AddElements"
+            android:label="@string/title_activity_add_elements" >
+        </activity>
+        <activity
+            android:name=".ManageTask.ViewTaskProject"
+            android:label="@string/title_activity_view_task_project" >
+        </activity>
+        <activity
+            android:name=".ManageTask.CreateFreeTimeSlot"
+            android:label="@string/title_activity_create_free_time_slot" >
+        </activity>
+        <activity
+            android:name=".ManageTask.CreateRecurringEvent"
+            android:label="@string/title_activity_create_recurring_event" >
+        </activity>
+        <activity
+            android:name=".ManageTask.ViewTaskList"
+            android:label="@string/title_activity_view_task_list" >
+        </activity>
+    </application>
+
+</manifest>

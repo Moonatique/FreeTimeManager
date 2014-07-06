@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Calendar.CalendarViewDay" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"/>
+
+    <item android:id="@+id/action_ListTask"
+        android:title="List Task"
+        android:orderInCategory="50"
+        android:icon="@drawable/ic_action_view_as_list"/>
+
+    <item android:id="@+id/action_new"
+        android:title="Add task"
+        android:orderInCategory="60"
+        android:icon="@drawable/ic_action_new"
+        />
+
+</menu>

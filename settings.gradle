@@ -1,0 +1,2 @@
+include 'apple', 'app', 'appyoann', 'appkim', 'appclem', ':CalendarModule', ':FreeTimeDatabaseModule', 'TaskOptimisationModule'
+
